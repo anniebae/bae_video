@@ -40,8 +40,9 @@ video#morning-vid {
 
 .morning-vid-txt {
   color: white;
-  font-family: helvetica;
-  font-size: 100px;
+  font-family: 'Quicksand';
+  font-size: 115px;
+  font-weight: 100;
   position: absolute;
   text-align: center;
   width: 100%;
