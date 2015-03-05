@@ -4,6 +4,24 @@ body {
   margin: 0;
 }
 
+h1,h2,h4,h5,h6 {
+  font-family: 'Quicksand';
+}
+
+.time-li {
+  font-family: 'Quicksand';
+  color: #fff;
+}
+
+#issues li h1 {
+  color: #BAD6FF;
+}
+
+a:hover,
+  a.selected {
+    color: #BAD6FF;
+  }
+
 #morning-vid-wrapper {
   height: 50vh;
   position: relative;
@@ -28,7 +46,7 @@ video#morning-vid {
 }
 
 .morning-vid-cover {
-  background-color: red;
+  background-color: lightblue;
   bottom: 0;
   height: auto;
   min-height: 100%;
@@ -43,10 +61,11 @@ video#morning-vid {
 .morning-vid-txt {
   color: white;
   font-family: 'Quicksand';
-  font-size: 115px;
+  font-size: 550%;
   font-weight: 100;
   position: absolute;
   text-align: center;
   width: 100%;
   z-index: 3;
+  top: 25%;
 }
