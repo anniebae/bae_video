@@ -38,7 +38,7 @@ $(function() {
       // value: true | false, default to false
       autoPlayDirection: 'forward',
       // value: forward | backward, default to forward
-      autoPlayPause: 2000
+      autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
 
 
