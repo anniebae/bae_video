@@ -78,18 +78,37 @@ h3 {
 #timeline {
   margin: 10% auto;
 }
-
 /********************* MORNING TIMELINE STYLES *********************/
 
 
 
-
-
+/********************* AFTERNOON VID STYLES *********************/
 #afternoon-vid-container {
   height: 100vh;
   width: 100vw;
   background-color: yellow;
+  position: relative;
 }
+
+#afternoon-vid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.afternoon-vid-cover {
+  position: absolute;
+  background-color: yellow;
+  opacity: 0.5;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+/********************* AFTERNOON VID STYLES *********************/
+
+
+
 
 #afternoon-timeline-container {
   height: 100vh;
