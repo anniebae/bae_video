@@ -3,30 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Bae's Timeline</title>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/lib/animations.min.css">
   <link rel="stylesheet" href="css/lib/timelinr.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-  <div id="morning-container">
+  <div id="morning-vid-container">
 
     <div id="morning-vid-wrapper">
       <video autoplay="autoplay" loop="loop" preload="auto" id="morning-vid">
-        <source src="videos/vid1.mp4" type="video/mp4">
-        <source src="videos/vid2.mp4" type="video/mp4">
-        <source src="videos/vid3.mp4" type="video/mp4">
+        <source src="videos/morning.mp4" type="video/mp4">
+<!--         <source src="videos/vid2.mp4" type="video/mp4">
+        <source src="videos/vid3.mp4" type="video/mp4"> -->
       </video>
     
+
       <div class="morning-vid-cover">
       </div>
 
       <div class="morning-vid-txt">
         <p><div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">MORNING</div> </p>
+        <a href="#morningT-container" class="smoothScroll">
+          <img src="css/images/down-arrow.png" class="arrow">
+        </a>
       </div>
     </div>
+  </div>
 
+  <div id="morningT-container">
     <div id="timeline">
       <ul id="dates">
         <li><a href="#7am" class="time-li">7am</a></li>
@@ -73,9 +79,7 @@
       <a href="#" id="next" style="display: block;">+</a>
       <a href="#" id="prev" style="display: block;">-</a>
     </div>
-
   </div>
-
 
 
 
@@ -85,6 +89,7 @@
   <script src="js/lib/jquery.timelinr.js"></script>
   <script src="js/lib/animations.min.js"></script>
   <script src="js/lib/appear.min.js"></script>
+  <script src="js/lib/smoothscroll.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

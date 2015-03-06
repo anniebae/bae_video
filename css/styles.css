@@ -1,5 +1,6 @@
 body {
   background-color: #222;
+  font-family: Futura;
   height: 100vh;
   margin: 0;
 }
@@ -22,40 +23,40 @@ a:hover,
     color: #BAD6FF;
   }
 
-#morning-vid-wrapper {
-  height: 50vh;
-  position: relative;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
+#morning-vid-container {
+  height: 100vh;
+}
+
+#morningT-container {
+  position: absolute;
+  height: 100vh;
+  background-color: #222;
+  z-index: 2;
+  width: 100%;
 }
 
 video#morning-vid {
-  /*width: 100%;
-  height: auto;
-  height: auto;*/
-  left: 0;
-  max-height: 100%;
-  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  min-height: 100%;
+/*  width: auto;
+  height: auto;*/
   z-index: -100;
-  -webkit-transform: scaleX(2); 
-  -moz-transform: scaleX(2);
 }
 
 .morning-vid-cover {
-  background-color: lightblue;
-  bottom: 0;
-  height: auto;
-  min-height: 100%;
-  min-width: 100%;
-  opacity: 0.6;
-  position: absolute;
+  position: fixed;
   right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
   width: auto;
+  height: auto;
   z-index: 2;
+  background-color: yellow;
+  opacity: 0.6;
 }
 
 .morning-vid-txt {
@@ -68,4 +69,10 @@ video#morning-vid {
   width: 100%;
   z-index: 3;
   top: 35%;
+}
+
+.arrow {
+  border-radius: 100%;
+  border: 1px solid white;
+  height: 50px;
 }
