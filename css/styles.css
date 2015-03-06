@@ -121,11 +121,21 @@ h3 {
 
 
 
+
 #afternoon-timeline-container {
   height: 100vh;
   width: 100vw;  
   background-color: #222;
+  text-align: center;
 }
+
+#timeline {
+  margin: 10% auto;
+}
+
+
+
+
 
 #evening-vid-container {
   height: 100vh;
