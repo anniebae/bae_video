@@ -1,3 +1,5 @@
+
+/********************* MORNING VID STYLES *********************/
 #morning-vid-container {
   height: 100vh;
   width: 100vw;
@@ -20,6 +22,27 @@
   height: 100%;
 }
 
+h3 {
+  font-weight: 100;
+}
+
+.morning-vid-txt {
+  color: white;
+  font-family: 'Quicksand';
+  font-size: 550%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+  z-index: 3;
+}
+
+.arrow {
+  border: 1px solid white;
+  border-radius: 100%;
+  height: 50px;
+}
+/********************* MORNING VID STYLES *********************/
 
 
 
@@ -39,6 +62,18 @@
   height: 100vh;
   width: 100vw;  
   background-color: green;
+}
+
+#evening-vid-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+}
+
+#evening-timeline-container {
+  height: 100vh;
+  width: 100vw;  
+  background-color: grey;
 }
 
 
