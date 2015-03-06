@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Bae's Timeline</title>
-  <link rel="stylesheet" href="css/timelinr.css">
+  <link rel="stylesheet" href="css/lib/timelinr.css">
+  <link rel="stylesheet" href="css/lib/animations.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
 </head>
@@ -22,7 +23,7 @@
       </div>
 
       <div class="morning-vid-txt">
-        <p>MORNING</p>
+        <p><div class="animate-in" data-anim-type="bounce-in-up" data-anim-delay="200">MORNING</div></p>
       </div>
     </div>
 
@@ -80,8 +81,10 @@
 
 
 
-  <script src="js/lib/jquery.js"></script>
   <script src="js/lib/jquery.timelinr.js"></script>
+  <script src="js/lib/aminations.min.js"></script>
+  <script src="js/lib/appear.min.js"></script>
+  <script src="js/lib/jquery.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
