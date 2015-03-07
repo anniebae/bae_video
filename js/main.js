@@ -5,7 +5,6 @@ $(function() {
     // autoPlay: 'true',
     // autoPlayDirection: 'forward',
     // startAt: 4
-
       orientation: 'horizontal',
       // value: horizontal | vertical, default to horizontal
       containerDiv: '#timeline',
@@ -40,8 +39,26 @@ $(function() {
       // value: forward | backward, default to forward
       autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
-
-
   });
+ 
+$('#menu-toggle').click(function(){
+if($('#menu').hasClass('open')){
+$('#menu').removeClass('open');
+$('#menu-toggle').removeClass('open');
+}else{
+$('#menu').addClass('open');
+$('#menu-toggle').addClass('open');
+}
+});
+
+
+
+
+
+
+
+
+
+
 
 });
