@@ -68,6 +68,7 @@ h3 {
 
 
 /********************* MORNING TIMELINE STYLES *********************/
+
 #morning-timeline-container {
   height: 100vh;
   width: 100vw;  
@@ -78,6 +79,9 @@ h3 {
 #timeline {
   margin: 10% auto;
 }
+
+
+
 /********************* MORNING TIMELINE STYLES *********************/
 
 

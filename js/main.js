@@ -9,7 +9,7 @@ $(function() {
       orientation: 'horizontal',
       // value: horizontal | vertical, default to horizontal
       containerDiv: '#timeline',
-      // value: any HTML tag or #id, default to #timeline
+      // value: any HTML tag or #id, default to #morning-timeline
       datesDiv: '#dates',
       // value: any HTML tag or #id, default to #dates
       datesSelectedClass: 'selected',
