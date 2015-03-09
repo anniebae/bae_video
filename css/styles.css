@@ -21,6 +21,48 @@ a:hover, a.selected{
   color: #99FF99;
 }
 
+
+
+#home-vid-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightpink;
+}
+
+#home-vid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.home-vid-cover {
+  position: absolute;
+  background-color: #669999;
+  opacity: 0.5;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.home-vid-txt {
+  color: white;
+  /*font-family: 'Quicksand';*/
+  font-size: 550%;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+  z-index: 3;
+}
+
+
+
+#home-script-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+}
+
 /********************* MORNING VID STYLES *********************/
 #morning-vid-container {
   height: 100vh;
