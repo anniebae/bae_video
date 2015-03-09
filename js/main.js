@@ -1,6 +1,10 @@
 $(function() {
   $("video").prop('muted', true);
 
+
+  $('#tooltip').tooltip();
+
+
   $("#timeline").timelinr({
     // autoPlay: 'true',
     // autoPlayDirection: 'forward',
