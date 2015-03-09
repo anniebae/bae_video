@@ -60,5 +60,5 @@ $(function() {
 
 
 new HomeView();
-
+new MorningView();
 
