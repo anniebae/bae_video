@@ -59,8 +59,10 @@ $(function() {
 
 
 
-new HomeView();
-new MorningView();
-new AfternoonView();
-new EveningView();
+// new HomeView();
+// new MorningView();
+// new AfternoonView();
+// new EveningView();
 
+
+new AppView();
