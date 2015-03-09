@@ -14,17 +14,28 @@
 <img src="css/images/menu.png" width=20 height=20 alt=""></img>
 </div>
 
-<nav id="menu">
-  <a href="#home-vid-container">Home</a>
-<a href="#morning-vid-container">Morning</a>
-<a href="#afternoon-vid-container">Afternoon</a>
-<a href="#evening-vid-container">Evening</a>
-</nav>
-
+  <nav id="menu">
+    <a href="#home-vid-container">Home</a>
+    <a href="#morning-vid-container">Morning</a>
+    <a href="#afternoon-vid-container">Afternoon</a>
+    <a href="#evening-vid-container">Evening</a>
+  </nav>
 
 <body>
 
-<!-- HOME VID DIV -->  
+
+
+
+
+<div id="home"></div>
+<div id="morning"></div>
+<div id="afternoon"></div>
+<div id="evening"></div>
+
+
+
+<script type="text/template" id="home-template">
+// <!-- HOME VID DIV -->  
   <div id="home-vid-container">
     <video src="videos/welcome.mp4" autoplay="autoplay" loop="loop" preload="auto" id="home-vid">
     </video>
@@ -41,10 +52,10 @@
       </a>
     </div>
   </div>
-<!-- HOME VID DIV -->
+// <!-- HOME VID DIV -->
 
 
-<!-- HOME SCRIPT DIV -->
+// <!-- HOME SCRIPT DIV -->
   <div id="home-script-container">
     <div class="home-script-txt">
       <p>This is</p>
@@ -56,8 +67,8 @@
       </a>
     </div>
   </div>
-<!-- HOME SCRIPT DIV -->
-
+// <!-- HOME SCRIPT DIV -->
+</script>
 
 
 <!-- MORNING VID DIV -->
@@ -289,11 +300,14 @@
 
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
   <script src="js/lib/jquery.timelinr.js"></script>
   <script src="js/lib/animations.min.js"></script>
   <script src="js/lib/appear.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/smoothscroll.js"></script>
+  <script src="js/backbone/views/homeView.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

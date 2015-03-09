@@ -52,19 +52,13 @@ $(function() {
     }else{
       $('#menu').addClass('open');
       $('#menu-toggle').addClass('open');
-  }
-
-
-});
-
-
-
-
-
-
-
-
-
-
+    }
+  });
 
 });
+
+
+
+new HomeView();
+
+
