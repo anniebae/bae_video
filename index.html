@@ -72,7 +72,7 @@
 
 
 <script type="text/template" id="morning-template">
-<!-- MORNING VID DIV -->
+// <!-- MORNING VID DIV -->
   <div id="morning-vid-container">
     <video src="videos/morning.mp4" autoplay="autoplay" loop="loop" preload="auto" id="morning-vid">
     </video>
@@ -89,10 +89,10 @@
       </a>
     </div>
   </div>
-<!-- MORNING VID DIV -->
+// <!-- MORNING VID DIV -->
 
 
-<!-- MORNING TIMELINE DIV -->
+// <!-- MORNING TIMELINE DIV -->
   <div id="morning-timeline-container">
     <div class="morning-timeline-body">
       <span class="time-of-day">MORNING</span>
@@ -144,12 +144,12 @@
       </div>
     </div>
   </div>
-<!-- MORNING TIMELINE DIV -->
+// <!-- MORNING TIMELINE DIV -->
 </script>
 
 
 <script type="text/template" id="afternoon-template">
-<!-- AFTERNOON VID DIV -->
+// <!-- AFTERNOON VID DIV -->
   <div id="afternoon-vid-container">
     <video src="videos/afternoon.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
     </video>
@@ -166,10 +166,10 @@
       </a>
     </div>
   </div>
-<!-- AFTERNOON VID DIV -->
+// <!-- AFTERNOON VID DIV -->
 
 
-<!-- AFTERNOON TIMELINE DIV -->
+// <!-- AFTERNOON TIMELINE DIV -->
   <div id="afternoon-timeline-container">
     <div class="afternoon-timeline-body">
       <span class="time-of-day">AFTERNOON</span>
@@ -221,10 +221,11 @@
       </div>
     </div>
   </div>
-<!-- AFTERNOON TIMELINE DIV -->
+// <!-- AFTERNOON TIMELINE DIV -->
 </script>
 
-<!-- EVENING VID DIV -->
+<script type="text/template" id="evening-template">
+// <!-- EVENING VID DIV -->
   <div id="evening-vid-container">
     <video src="videos/evening.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
     </video>
@@ -241,12 +242,9 @@
       </a>
     </div>
   </div>
-<!-- EVENING VID DIV -->
+// <!-- EVENING VID DIV -->
 
-
-
-
-<!-- EVENING TIMELINE DIV -->
+// <!-- EVENING TIMELINE DIV -->
   <div id="evening-timeline-container">
     <div class="evening-timeline-body">
       <span class="time-of-day">EVENING</span>
@@ -298,7 +296,8 @@
       </div>
     </div>
   </div>
-<!-- EVENING TIMELINE DIV -->
+// <!-- EVENING TIMELINE DIV -->
+</script>
 
 
   <script src="js/lib/jquery.js"></script>
@@ -313,6 +312,7 @@
   <script src="js/backbone/views/homeView.js"></script>
   <script src="js/backbone/views/morningView.js"></script>
   <script src="js/backbone/views/afternoonView.js"></script>
+  <script src="js/backbone/views/eveningView.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
