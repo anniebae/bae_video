@@ -22,7 +22,7 @@ a:hover, a.selected{
 }
 
 
-
+/********************* HOME VID STYLES *********************/
 #home-vid-container {
   height: 100vh;
   width: 100vw;
@@ -54,14 +54,28 @@ a:hover, a.selected{
   width: 100%;
   z-index: 3;
 }
+/********************* HOME VID STYLES *********************/
 
 
 
+/********************* HOME SCRIPT STYLES *********************/
 #home-script-container {
   height: 100vh;
   width: 100vw;
   background-color: lightblue;
 }
+
+.nutshell {
+  height: 45px;
+}
+
+.home-script-txt {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20%;
+}
+/********************* HOME SCRIPT STYLES *********************/
+
 
 /********************* MORNING VID STYLES *********************/
 #morning-vid-container {
