@@ -2,6 +2,7 @@ body {
   font-family: futura;
   font-weight: 100;
   color: white;
+  line-height: 0;
 }
 
 .time-of-day {
@@ -78,6 +79,7 @@ a:hover, a.selected{
   font-size: 30px;
   text-align: center;
   padding-top: 20%;
+  line-height: 1.5;
 }
 /********************* HOME SCRIPT STYLES *********************/
 
