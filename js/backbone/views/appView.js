@@ -16,5 +16,6 @@ var AppView = Backbone.View.extend({
   },
   renderMorning: function() {
     $('#body').html(this.morningTemplate());
+    return this;
   },
 });
