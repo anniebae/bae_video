@@ -12,7 +12,8 @@ var AppView = Backbone.View.extend({
     'click #morning-tab'    : 'renderMorning',
     'click #afternoon-tab'  : 'renderAfternoon',
     'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'triggerAnimation'
+    'click .menu-item'      : 'triggerAnimation',
+    'click .arrow'          : 'triggerSmoothScroll'
   },
   renderHome: function() {
     $('#body').html(this.homeTemplate());
@@ -51,4 +52,13 @@ var AppView = Backbone.View.extend({
         });
       }
   },
+  triggerSmoothScroll: function() {
+   $('a.smoothScroll').on('click', function() {
+      $.smoothScroll({
+        scrollElement: $('div#morning-vid-container'),
+        scrollTarget: '#morning-timeline-container'
+      });
+      return false;
+    });
+  }
 });

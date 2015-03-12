@@ -1,6 +1,7 @@
 $(function() {
   $("video").prop('muted', true);
 
+  
 
   $('#tooltip').tooltip();
 
@@ -57,6 +58,9 @@ $(function() {
 
 });
 
+$('img.arrow').on('click', function() {
+    console.log('i was touched');
+  });
 
 
 // new HomeView();
