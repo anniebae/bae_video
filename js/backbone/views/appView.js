@@ -8,8 +8,10 @@ var AppView = Backbone.View.extend({
     this.renderHome();
   },
   events: {
-    'click #home-tab'     : 'renderHome',
-    'click #morning-tab'  : 'renderMorning',
+    'click #home-tab'       : 'renderHome',
+    'click #morning-tab'    : 'renderMorning',
+    'click #afternoon-tab'  : 'renderAfternoon',
+    'click #evening-tab'     : 'renderEvening'
   },
   renderHome: function() {
     $('#body').html(this.homeTemplate());
@@ -18,5 +20,11 @@ var AppView = Backbone.View.extend({
   renderMorning: function() {
     $('#body').html(this.morningTemplate());
     return this;
+  },
+  renderAfternoon: function() {
+    $('#body').html(this.afternoonTemplate());
+  },
+  renderEvening: function() {
+    $('#body').html(this.eveningTemplate());
   },
 });
