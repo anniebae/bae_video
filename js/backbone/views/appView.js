@@ -1,5 +1,5 @@
 var AppView = Backbone.View.extend({
-  el: "#body",
+  el: "#menu",
   homeTemplate: _.template($("#home-template").html()),
   morningTemplate: _.template($("#morning-template").html()),
   afternoonTemplate: _.template($("#afternoon-template").html()),
@@ -12,7 +12,8 @@ var AppView = Backbone.View.extend({
     'click #morning-tab'  : 'renderMorning',
   },
   renderHome: function() {
-    this.$el.html(this.homeTemplate());
+    $('#body').html(this.homeTemplate());
+    return this;
   },
   renderMorning: function() {
     $('#body').html(this.morningTemplate());
