@@ -59,7 +59,7 @@ $(function() {
 });
 
 $('img.arrow').on('click', function() {
-    console.log('i was touched');
+    console.log('arrow clicked');
   });
 
 
