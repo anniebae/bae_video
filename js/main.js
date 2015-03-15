@@ -58,7 +58,7 @@ $(function() {
 
 });
 
-$('img.arrow').on('click', function() {
+$('.arrow').on('click', function() {
     console.log('arrow clicked');
   });
 
