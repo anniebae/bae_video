@@ -60,7 +60,7 @@ $(function() {
 
 $('.arrow').on('click', function() {
     console.log('arrow clicked');
-  });
+});
 
 
 // new HomeView();
