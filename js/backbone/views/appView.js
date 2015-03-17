@@ -7,6 +7,7 @@ var AppView = Backbone.View.extend({
   initialize: function () {
     this.renderHome();
   },
+  
   events: {
     'click #home-tab'       : 'renderHome',
     'click #morning-tab'    : 'renderMorning',
