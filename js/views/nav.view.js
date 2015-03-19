@@ -29,6 +29,7 @@ var NavView = Backbone.View.extend({
   triggerScroll: function() {
     jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
     console.log('we triggering?');
+    this.triggerAnimation();
   },
   triggerAnimation: function() {
     if ($('html').hasClass('no-js'))
