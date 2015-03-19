@@ -14,10 +14,13 @@ $(function() {
     }
   });
 
+
+
+
   $("#timeline").timelinr({
-    // autoPlay: 'true',
-    // autoPlayDirection: 'forward',
-    // startAt: 4
+      autoPlay: 'true',
+      autoPlayDirection: 'forward',
+      startAt: 4,
       orientation: 'horizontal',
       // value: horizontal | vertical, default to horizontal
       containerDiv: '#timeline',

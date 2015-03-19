@@ -1,5 +1,5 @@
 var NavView = Backbone.View.extend({
-  el: "#menu",
+  el: "#nav",
   initialize: function () {
     this.init();
   },
@@ -8,8 +8,7 @@ var NavView = Backbone.View.extend({
     'click #morning-tab'    : 'renderMorning',
     'click #afternoon-tab'  : 'renderAfternoon',
     'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'triggerAnimation',
-    'click .menu-item'      : 'triggerScroll'
+    'click .menu-item'      : 'prep'
   },
   init: function() {
     layoutView = new LayoutView();
@@ -26,12 +25,16 @@ var NavView = Backbone.View.extend({
   renderEvening: function() {
     layoutView.evening();
   },
-  triggerScroll: function() {
-    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
-    console.log('we triggering?');
-    this.triggerAnimation();
+  prep: function() {
+    this.panDown();
+    this.toggle();
+    this.rollText();
+
   },
-  triggerAnimation: function() {
+  panDown: function() {
+    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
+  },
+  rollText: function() {
     if ($('html').hasClass('no-js'))
       $('html').toggleClass('no-js js');
       if ($(window).width() <= 568) {
@@ -51,5 +54,15 @@ var NavView = Backbone.View.extend({
           }, { accX: 0, accY: -100 });
         });
       }
+  },
+  toggle: function() {
+    console.log('hello?');
+    if ($('#menu').hasClass('open')) {
+      $('#menu').removeClass('open');
+      $('#menu-toggle').removeClass('open');
+    } else {
+      $('#menu').addClass('open');
+      $('#menu-toggle').addClass('open');
+    }
   },
 });
