@@ -1,29 +1,17 @@
 var AppView = Backbone.View.extend({
   el: "#menu",
-
   initialize: function () {
-    this.renderHome();
+    this.init();
   },
   events: {
     'click #home-tab'       : 'renderHome',
     'click #morning-tab'    : 'renderMorning',
     'click #afternoon-tab'  : 'renderAfternoon',
     'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'triggerAnimation',
-    'click .arrow'          : 'triggerSmoothScroll'
+    'click .menu-item'      : 'triggerAnimation'
   },
-
-  renderMorning: function() {
-    $('#view').html(this.morningTemplate());
-    return this;
-  },
-  renderAfternoon: function() {
-    $('#view').html(this.afternoonTemplate());
-    return this;
-  },
-  renderEvening: function() {
-    $('#view').html(this.eveningTemplate());
-    return this;
+  init: function() {
+    var layoutView = new LayoutView();
   },
   triggerAnimation: function() {
     if ($('html').hasClass('no-js'))

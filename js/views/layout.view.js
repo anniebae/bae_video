@@ -4,7 +4,12 @@ var LayoutView = Backbone.View.extend({
   morningTemplate: _.template($("#morning-template").html()),
   afternoonTemplate: _.template($("#afternoon-template").html()),
   eveningTemplate: _.template($("#evening-template").html()),
-  events: {},
+  events: {
+  	'click .arrow' : 'triggerSmoothScroll'
+  },
+  initialize: function() {
+  	this.home();
+  },
   home: function() {
     this.$el.html(this.homeTemplate());
     return this;
