@@ -27,12 +27,12 @@ var NavView = Backbone.View.extend({
     layoutView.evening();
   },
   prep: function() {
+    this.mute();
     this.pan();
     this.toggle();
     this.roll();
   },
   toggle: function() {
-    console.log('hello?');
     if ($('#menu').hasClass('open')) {
       $('#menu').removeClass('open');
       $('#menu-toggle').removeClass('open');
@@ -42,7 +42,10 @@ var NavView = Backbone.View.extend({
     }
   },
   pan: function() {
-    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
+    $.localScroll({filter:'.smoothScroll'});
+  },
+  mute: function() {
+    $("video").prop('muted', true);
   },
   roll: function() {
     if ($('html').hasClass('no-js'))
@@ -50,7 +53,6 @@ var NavView = Backbone.View.extend({
       if ($(window).width() <= 568) {
         $('.animate-in').removeClass('animate-in animating animate-out infinite').removeClass(effects.join(' '));
       } else {
-        // Animate element
         $('.animate-in').each(function(i, elem) {
           var type = $(elem).attr('data-anim-type'),
           delay = $(elem).attr('data-anim-delay');
