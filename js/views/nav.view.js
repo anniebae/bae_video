@@ -4,11 +4,12 @@ var NavView = Backbone.View.extend({
     this.init();
   },
   events: {
-    'click #home-tab'       : 'renderHome',
-    'click #morning-tab'    : 'renderMorning',
-    'click #afternoon-tab'  : 'renderAfternoon',
-    'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'prep'
+    'click #home-tab'      : 'renderHome',
+    'click #morning-tab'   : 'renderMorning',
+    'click #afternoon-tab' : 'renderAfternoon',
+    'click #evening-tab'   : 'renderEvening',
+    'click .menu-item'     : 'prep',
+    'click #menu-toggle'   : 'toggle'
   },
   init: function() {
     layoutView = new LayoutView();
@@ -26,15 +27,24 @@ var NavView = Backbone.View.extend({
     layoutView.evening();
   },
   prep: function() {
-    this.panDown();
+    this.pan();
     this.toggle();
-    this.rollText();
-
+    this.roll();
   },
-  panDown: function() {
+  toggle: function() {
+    console.log('hello?');
+    if ($('#menu').hasClass('open')) {
+      $('#menu').removeClass('open');
+      $('#menu-toggle').removeClass('open');
+    } else {
+      $('#menu').addClass('open');
+      $('#menu-toggle').addClass('open');
+    }
+  },
+  pan: function() {
     jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
   },
-  rollText: function() {
+  roll: function() {
     if ($('html').hasClass('no-js'))
       $('html').toggleClass('no-js js');
       if ($(window).width() <= 568) {
@@ -54,15 +64,5 @@ var NavView = Backbone.View.extend({
           }, { accX: 0, accY: -100 });
         });
       }
-  },
-  toggle: function() {
-    console.log('hello?');
-    if ($('#menu').hasClass('open')) {
-      $('#menu').removeClass('open');
-      $('#menu-toggle').removeClass('open');
-    } else {
-      $('#menu').addClass('open');
-      $('#menu-toggle').addClass('open');
-    }
   },
 });
