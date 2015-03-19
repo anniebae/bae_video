@@ -16,19 +16,19 @@ var AppView = Backbone.View.extend({
     'click .arrow'          : 'triggerSmoothScroll'
   },
   renderHome: function() {
-    $('#body').html(this.homeTemplate());
+    $('#view').html(this.homeTemplate());
     return this;
   },
   renderMorning: function() {
-    $('#body').html(this.morningTemplate());
+    $('#view').html(this.morningTemplate());
     return this;
   },
   renderAfternoon: function() {
-    $('#body').html(this.afternoonTemplate());
+    $('#view').html(this.afternoonTemplate());
     return this;
   },
   renderEvening: function() {
-    $('#body').html(this.eveningTemplate());
+    $('#view').html(this.eveningTemplate());
     return this;
   },
   triggerAnimation: function() {

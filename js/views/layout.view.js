@@ -1,5 +1,5 @@
-var HomeView = Backbone.View.extend({
-  el: "#home",
+var LayoutView = Backbone.View.extend({
+  el: "#view",
   homeTemplate: _.template($("#home-template").html()),
   initialize: function() {
     this.render();
