@@ -52,15 +52,4 @@ var AppView = Backbone.View.extend({
         });
       }
   },
-  triggerSmoothScroll: function() {
-   $('a.smoothScroll').on('click', function() {
-      $.smoothScroll({
-        scrollElement: $('div#morning-vid-container'),
-        scrollTarget: '#morning-timeline-container'
-      });
-      return false;
-    });
-
-
-  }
 });

@@ -1,7 +1,11 @@
+new AppView();
 $(function() {
   $("video").prop('muted', true);
 
-  
+
+   $('.morning-vid-txt').smoothScroll({
+    
+   });
 
   $('#tooltip').tooltip();
 
@@ -58,7 +62,8 @@ $(function() {
 
 });
 
-$('.arrow').on('click', function() {
+$('.arrow').on('click', function(e) {
+  e.preventDefault();
     console.log('arrow clicked');
 });
 
@@ -69,4 +74,3 @@ $('.arrow').on('click', function() {
 // new EveningView();
 
 
-new AppView();
