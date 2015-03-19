@@ -1,4 +1,4 @@
-var AppView = Backbone.View.extend({
+var NavView = Backbone.View.extend({
   el: "#menu",
   initialize: function () {
     this.init();
@@ -8,7 +8,8 @@ var AppView = Backbone.View.extend({
     'click #morning-tab'    : 'renderMorning',
     'click #afternoon-tab'  : 'renderAfternoon',
     'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'triggerAnimation'
+    'click .menu-item'      : 'triggerAnimation',
+    'click .menu-item'      : 'triggerScroll'
   },
   init: function() {
     layoutView = new LayoutView();
@@ -24,6 +25,10 @@ var AppView = Backbone.View.extend({
   },
   renderEvening: function() {
     layoutView.evening();
+  },
+  triggerScroll: function() {
+    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
+    console.log('we triggering?');
   },
   triggerAnimation: function() {
     if ($('html').hasClass('no-js'))
@@ -45,7 +50,5 @@ var AppView = Backbone.View.extend({
           }, { accX: 0, accY: -100 });
         });
       }
-      
-    $("video").prop('muted', true);
   },
 });
