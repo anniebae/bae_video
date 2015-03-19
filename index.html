@@ -9,287 +9,272 @@
   <link rel="stylesheet" href="css/lib/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<div id="menu-toggle">
-<img src="css/images/menu.png" width=20 height=20 alt=""></img>
-</div>
-
-  <nav id="menu">
-    <a class="menu-item" href="#home-vid-container" id="home-tab">Home</a>
-    <a class="menu-item" href="#morning-vid-container" id="morning-tab">Morning</a>
-    <a class="menu-item" href="#afternoon-vid-container" id="afternoon-tab">Afternoon</a>
-    <a class="menu-item" href="#evening-vid-container" id="evening-tab">Evening</a>
-  </nav>
-
 <body>
 
-
-<div id="body"></div>
-
-
-<script type="text/template" id="home-template">
-// <!-- HOME VID DIV -->  
-  <div id="home-vid-container">
-    <video src="videos/welcome.mp4" autoplay="autoplay" loop="loop" preload="auto" id="home-vid">
-    </video>
-
-    <div class="home-vid-cover">
+    <div id="menu-toggle">
+      <img src="css/images/menu.png" width=20 height=20 alt=""></img>
     </div>
+    <nav id="menu">
+      <a class="menu-item" href="#home" id="home-tab">Home</a>
+      <a class="menu-item" href="#morning" id="morning-tab">Morning</a>
+      <a class="menu-item" href="#afternoon" id="afternoon-tab">Afternoon</a>
+      <a class="menu-item" href="#evening" id="evening-tab">Evening</a>
+    </nav>
 
-    <div class="home-vid-txt">
-      <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
-        <h1>Hello!</h1>
+  <div id="view">
+    
+    <!-- VIEW INJECTION -->
+
+  </div>
+
+  <script type="text/template" id="home-template"> 
+    <div id="home">
+      <video src="videos/welcome.mp4" autoplay="autoplay" loop="loop" preload="auto" id="home-vid">
+      </video>
+
+      <div class="home-vid-cover">
       </div>
-      <a href="#home-script-container" class="smoothScroll">
-        <img src="css/images/down-arrow.png" class="arrow">
-      </a>
-    </div>
-  </div>
-// <!-- HOME VID DIV -->
 
-
-// <!-- HOME SCRIPT DIV -->
-  <div id="home-script-container">
-    <div class="home-script-txt">
-      <p>This is</p>
-      <p>my life</p>
-      <p>in a</p>
-      <p>nutshell</p>
-      <a href="#" data-toggle="tooltip" data-placement="bottom" id="tooltip" title="I'm inside! -Life">
-        <img src="css/images/nutshell.png" class="nutshell">
-      </a>
-    </div>
-  </div>
-// <!-- HOME SCRIPT DIV -->
-</script>
-
-
-<script type="text/template" id="morning-template">
-// <!-- MORNING VID DIV -->
-  <div id="morning-vid-container">
-    <video src="videos/morning.mp4" autoplay="autoplay" loop="loop" preload="auto" id="morning-vid">
-    </video>
-
-    <div class="morning-vid-cover">
-    </div>
-
-    <div class="morning-vid-txt">
-      <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
-        <h1>MORNING</h1>
+      <div class="home-vid-txt">
+        <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
+          <h1>Hello!</h1>
+        </div>
+        <a href="#home-script-container" class="smoothScroll">
+          <img src="css/images/down-arrow.png" class="arrow">
+        </a>
       </div>
-      <a href="#morning-timeline-container" class="smoothScroll">
-        <img src="css/images/down-arrow.png" class="arrow">
-      </a>
-    </div>
-  </div>
-// <!-- MORNING VID DIV -->
+    </div><!-- HOME VID DIV -->
 
-
-// <!-- MORNING TIMELINE DIV -->
-  <div id="morning-timeline-container">
-    <div class="morning-timeline-body">
-      <span class="time-of-day">MORNING</span>
-      <div id="timeline">
-        <ul id="dates">
-          <li><a href="#7am" class="time-li">7am</a></li>
-          <li><a href="#8am" class="time-li">8am</a></li>
-          <li><a href="#9am" class="time-li">9am</a></li>
-          <li><a href="#10am" class="time-li">10am</a></li>
-          <li><a href="#11am" class="time-li">11am</a></li>
-          <li><a href="#12am" class="time-li">12am</a></li>
-        </ul>
-        <ul id="issues">
-          <li id="7am">
-            <img src="css/images/1.png" width="256" height="256" />
-            <h1>7am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="8am">
-            <img src="css/images/3.png" width="256" height="256" />
-            <h1>8am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="9am">
-            <img src="css/images/4.png" width="256" height="256" />
-            <h1>9am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="10am">
-            <img src="css/images/5.png" width="256" height="256" />
-            <h1>10am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="11am">
-            <img src="css/images/8.png" width="256" height="256" />
-            <h1>11am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="12am">
-            <img src="css/images/9.png" width="256" height="256" />
-            <h1>12pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-        </ul>
-        <div id="grad_left"></div>
-        <div id="grad_right"></div>
-        <a href="#" id="next" style="display: block;">+</a>
-        <a href="#" id="prev" style="display: block;">-</a>      
+    <div id="home-script-container">
+      <div class="home-script-txt">
+        <p>This is</p>
+        <p>my life</p>
+        <p>in a</p>
+        <p>nutshell</p>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" id="tooltip" title="I'm inside! -Life">
+          <img src="css/images/nutshell.png" class="nutshell">
+        </a>
       </div>
     </div>
-  </div>
-// <!-- MORNING TIMELINE DIV -->
-</script>
+  </script>
 
 
-<script type="text/template" id="afternoon-template">
-// <!-- AFTERNOON VID DIV -->
-  <div id="afternoon-vid-container">
-    <video src="videos/afternoon.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
-    </video>
+  <script type="text/template" id="morning-template">
 
-    <div class="afternoon-vid-cover">
-    </div>
+    <div id="morning">
+      <video src="videos/morning.mp4" autoplay="autoplay" loop="loop" preload="auto" id="morning-vid">
+      </video>
 
-    <div class="afternoon-vid-txt">
-      <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
-        <h1>AFTERNOON</h1>
+      <div class="morning-vid-cover">
       </div>
-      <a href="#afternoon-timeline-container" class="smoothScroll">
-        <img src="css/images/down-arrow.png" class="arrow">
-      </a>
-    </div>
-  </div>
-// <!-- AFTERNOON VID DIV -->
 
-
-// <!-- AFTERNOON TIMELINE DIV -->
-  <div id="afternoon-timeline-container">
-    <div class="afternoon-timeline-body">
-      <span class="time-of-day">AFTERNOON</span>
-      <div id="timeline">
-        <ul id="dates">
-          <li><a href="#1pm" class="time-li">1pm</a></li>
-          <li><a href="#2pm" class="time-li">2pm</a></li>
-          <li><a href="#3pm" class="time-li">3pm</a></li>
-          <li><a href="#4pm" class="time-li">4pm</a></li>
-          <li><a href="#5pm" class="time-li">5pm</a></li>
-          <li><a href="#6pm" class="time-li">6pm</a></li>
-        </ul>
-        <ul id="issues">
-          <li id="1pm">
-            <img src="css/images/1.png" width="256" height="256" />
-            <h1>1pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="2pm">
-            <img src="css/images/3.png" width="256" height="256" />
-            <h1>2pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="3pm">
-            <img src="css/images/4.png" width="256" height="256" />
-            <h1>3pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="4pm">
-            <img src="css/images/5.png" width="256" height="256" />
-            <h1>4pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="5pm">
-            <img src="css/images/8.png" width="256" height="256" />
-            <h1>5pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="6pm">
-            <img src="css/images/9.png" width="256" height="256" />
-            <h1>6pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-        </ul>
-        <div id="grad_left"></div>
-        <div id="grad_right"></div>
-        <a href="#" id="next" style="display: block;">+</a>
-        <a href="#" id="prev" style="display: block;">-</a>      
+      <div class="morning-vid-txt">
+        <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
+          <h1>MORNING</h1>
+        </div>
+        <a href="#morning-timeline-container" class="smoothScroll">
+          <img src="css/images/down-arrow.png" class="arrow">
+        </a>
       </div>
-    </div>
-  </div>
-// <!-- AFTERNOON TIMELINE DIV -->
-</script>
+    </div><!-- MORNING VID DIV -->
 
-<script type="text/template" id="evening-template">
-// <!-- EVENING VID DIV -->
-  <div id="evening-vid-container">
-    <video src="videos/evening.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
-    </video>
-
-    <div class="evening-vid-cover">
-    </div>
-
-    <div class="evening-vid-txt">
-      <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
-        <h1>EVENING</h1>
+    <div id="morning-timeline-container">
+      <div class="morning-timeline-body">
+        <span class="time-of-day">MORNING</span>
+        <div id="timeline">
+          <ul id="dates">
+            <li><a href="#7am" class="time-li">7am</a></li>
+            <li><a href="#8am" class="time-li">8am</a></li>
+            <li><a href="#9am" class="time-li">9am</a></li>
+            <li><a href="#10am" class="time-li">10am</a></li>
+            <li><a href="#11am" class="time-li">11am</a></li>
+            <li><a href="#12am" class="time-li">12am</a></li>
+          </ul>
+          <ul id="issues">
+            <li id="7am">
+              <img src="css/images/1.png" width="256" height="256" />
+              <h1>7am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="8am">
+              <img src="css/images/3.png" width="256" height="256" />
+              <h1>8am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="9am">
+              <img src="css/images/4.png" width="256" height="256" />
+              <h1>9am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="10am">
+              <img src="css/images/5.png" width="256" height="256" />
+              <h1>10am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="11am">
+              <img src="css/images/8.png" width="256" height="256" />
+              <h1>11am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="12am">
+              <img src="css/images/9.png" width="256" height="256" />
+              <h1>12pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+          </ul>
+          <div id="grad_left"></div>
+          <div id="grad_right"></div>
+          <a href="#" id="next" style="display: block;">+</a>
+          <a href="#" id="prev" style="display: block;">-</a>      
+        </div>
       </div>
-      <a href="#evening-timeline-container" class="smoothScroll">
-        <img src="css/images/down-arrow.png" class="arrow">
-      </a>
-    </div>
-  </div>
-// <!-- EVENING VID DIV -->
+    </div><!-- MORNING TIMELINE DIV -->
+  </script>
 
-// <!-- EVENING TIMELINE DIV -->
-  <div id="evening-timeline-container">
-    <div class="evening-timeline-body">
-      <span class="time-of-day">EVENING</span>
-      <div id="timeline">
-        <ul id="dates">
-          <li><a href="#7pm" class="time-li">7pm</a></li>
-          <li><a href="#8pmm" class="time-li">8pmm</a></li>
-          <li><a href="#9pm" class="time-li">9pm</a></li>
-          <li><a href="#10pm" class="time-li">10pm</a></li>
-          <li><a href="#11pm" class="time-li">11pm</a></li>
-          <li><a href="#12pm" class="time-li">12pm</a></li>
-        </ul>
-        <ul id="issues">
-          <li id="7pm">
-            <img src="css/images/1.png" width="256" height="256" />
-            <h1>7pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="8pm">
-            <img src="css/images/3.png" width="256" height="256" />
-            <h1>8pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="9pm">
-            <img src="css/images/4.png" width="256" height="256" />
-            <h1>9pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="10pm">
-            <img src="css/images/5.png" width="256" height="256" />
-            <h1>10pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="11pm">
-            <img src="css/images/8.png" width="256" height="256" />
-            <h1>11pm</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-          <li id="12am">
-            <img src="css/images/9.png" width="256" height="256" />
-            <h1>12am</h1>
-            <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
-          </li>
-        </ul>
-        <div id="grad_left"></div>
-        <div id="grad_right"></div>
-        <a href="#" id="next" style="display: block;">+</a>
-        <a href="#" id="prev" style="display: block;">-</a>
+
+  <script type="text/template" id="afternoon-template">
+    <div id="afternoon">
+      <video src="videos/afternoon.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
+      </video>
+
+      <div class="afternoon-vid-cover">
       </div>
-    </div>
-  </div><!-- EVENING TIMELINE DIV -->
-</script>
+
+      <div class="afternoon-vid-txt">
+        <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
+          <h1>AFTERNOON</h1>
+        </div>
+        <a href="#afternoon-timeline-container" class="smoothScroll">
+          <img src="css/images/down-arrow.png" class="arrow">
+        </a>
+      </div>
+    </div><!-- AFTERNOON VID DIV -->
+
+
+    <div id="afternoon-timeline-container">
+      <div class="afternoon-timeline-body">
+        <span class="time-of-day">AFTERNOON</span>
+        <div id="timeline">
+          <ul id="dates">
+            <li><a href="#1pm" class="time-li">1pm</a></li>
+            <li><a href="#2pm" class="time-li">2pm</a></li>
+            <li><a href="#3pm" class="time-li">3pm</a></li>
+            <li><a href="#4pm" class="time-li">4pm</a></li>
+            <li><a href="#5pm" class="time-li">5pm</a></li>
+            <li><a href="#6pm" class="time-li">6pm</a></li>
+          </ul>
+          <ul id="issues">
+            <li id="1pm">
+              <img src="css/images/1.png" width="256" height="256" />
+              <h1>1pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="2pm">
+              <img src="css/images/3.png" width="256" height="256" />
+              <h1>2pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="3pm">
+              <img src="css/images/4.png" width="256" height="256" />
+              <h1>3pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="4pm">
+              <img src="css/images/5.png" width="256" height="256" />
+              <h1>4pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="5pm">
+              <img src="css/images/8.png" width="256" height="256" />
+              <h1>5pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="6pm">
+              <img src="css/images/9.png" width="256" height="256" />
+              <h1>6pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+          </ul>
+          <div id="grad_left"></div>
+          <div id="grad_right"></div>
+          <a href="#" id="next" style="display: block;">+</a>
+          <a href="#" id="prev" style="display: block;">-</a>      
+        </div>
+      </div>
+    </div><!-- AFTERNOON TIMELINE DIV -->
+  </script>
+
+  <script type="text/template" id="evening-template">
+    <div id="evening">
+      <video src="videos/evening.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
+      </video>
+
+      <div class="evening-vid-cover">
+      </div>
+
+      <div class="evening-vid-txt">
+        <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
+          <h1>EVENING</h1>
+        </div>
+        <a href="#evening-timeline-container" class="smoothScroll">
+          <img src="css/images/down-arrow.png" class="arrow">
+        </a>
+      </div>
+    </div><!-- EVENING VID DIV -->
+
+    
+    <div id="evening-timeline-container">
+      <div class="evening-timeline-body">
+        <span class="time-of-day">EVENING</span>
+        <div id="timeline">
+          <ul id="dates">
+            <li><a href="#7pm" class="time-li">7pm</a></li>
+            <li><a href="#8pmm" class="time-li">8pmm</a></li>
+            <li><a href="#9pm" class="time-li">9pm</a></li>
+            <li><a href="#10pm" class="time-li">10pm</a></li>
+            <li><a href="#11pm" class="time-li">11pm</a></li>
+            <li><a href="#12pm" class="time-li">12pm</a></li>
+          </ul>
+          <ul id="issues">
+            <li id="7pm">
+              <img src="css/images/1.png" width="256" height="256" />
+              <h1>7pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="8pm">
+              <img src="css/images/3.png" width="256" height="256" />
+              <h1>8pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="9pm">
+              <img src="css/images/4.png" width="256" height="256" />
+              <h1>9pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="10pm">
+              <img src="css/images/5.png" width="256" height="256" />
+              <h1>10pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="11pm">
+              <img src="css/images/8.png" width="256" height="256" />
+              <h1>11pm</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+            <li id="12am">
+              <img src="css/images/9.png" width="256" height="256" />
+              <h1>12am</h1>
+              <p>Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.</p>
+            </li>
+          </ul>
+          <div id="grad_left"></div>
+          <div id="grad_right"></div>
+          <a href="#" id="next" style="display: block;">+</a>
+          <a href="#" id="prev" style="display: block;">-</a>
+        </div>
+      </div>
+    </div><!-- EVENING TIMELINE DIV -->
+  </script>
 
 
   <script src="js/lib/jquery.js"></script>
@@ -301,11 +286,8 @@
   <script src="js/lib/appear.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/smoothscroll.js"></script>
-  <script src="js/backbone/views/homeView.js"></script>
-  <script src="js/backbone/views/morningView.js"></script>
-  <script src="js/backbone/views/afternoonView.js"></script>
-  <script src="js/backbone/views/eveningView.js"></script>
-  <script src="js/backbone/views/appView.js"></script>
+  <script src="js/views/nav.view.js"></script>
+  <script src="js/views/layout.view.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

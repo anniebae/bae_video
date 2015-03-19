@@ -1,14 +1,18 @@
-new AppView();
+new NavView();
+
 $(function() {
+
   $("video").prop('muted', true);
 
-
-   $('.morning-vid-txt').smoothScroll({
-    
-   });
-
-  $('#tooltip').tooltip();
-
+  $('#menu-toggle').click(function() {
+    if ($('#menu').hasClass('open')) {
+      $('#menu').removeClass('open');
+      $('#menu-toggle').removeClass('open');
+    } else {
+      $('#menu').addClass('open');
+      $('#menu-toggle').addClass('open');
+    }
+  });
 
   $("#timeline").timelinr({
     // autoPlay: 'true',
@@ -50,27 +54,6 @@ $(function() {
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
   });
  
-  $('#menu-toggle').click(function(){
-    if($('#menu').hasClass('open')){
-      $('#menu').removeClass('open');
-      $('#menu-toggle').removeClass('open');
-    }else{
-      $('#menu').addClass('open');
-      $('#menu-toggle').addClass('open');
-    }
-  });
+
 
 });
-
-$('.arrow').on('click', function(e) {
-  e.preventDefault();
-    console.log('arrow clicked');
-});
-
-
-// new HomeView();
-// new MorningView();
-// new AfternoonView();
-// new EveningView();
-
-

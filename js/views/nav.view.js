@@ -1,11 +1,7 @@
-var AppView = Backbone.View.extend({
+var NavView = Backbone.View.extend({
   el: "#menu",
-  homeTemplate: _.template($("#home-template").html()),
-  morningTemplate: _.template($("#morning-template").html()),
-  afternoonTemplate: _.template($("#afternoon-template").html()),
-  eveningTemplate: _.template($("#evening-template").html()),
   initialize: function () {
-    this.renderHome();
+    this.init();
   },
   events: {
     'click #home-tab'       : 'renderHome',
@@ -13,23 +9,26 @@ var AppView = Backbone.View.extend({
     'click #afternoon-tab'  : 'renderAfternoon',
     'click #evening-tab'    : 'renderEvening',
     'click .menu-item'      : 'triggerAnimation',
-    'click .arrow'          : 'triggerSmoothScroll'
+    'click .menu-item'      : 'triggerScroll'
+  },
+  init: function() {
+    layoutView = new LayoutView();
   },
   renderHome: function() {
-    $('#body').html(this.homeTemplate());
-    return this;
+    layoutView.home();
   },
   renderMorning: function() {
-    $('#body').html(this.morningTemplate());
-    return this;
+    layoutView.morning();
   },
   renderAfternoon: function() {
-    $('#body').html(this.afternoonTemplate());
-    return this;
+    layoutView.afternoon();
   },
   renderEvening: function() {
-    $('#body').html(this.eveningTemplate());
-    return this;
+    layoutView.evening();
+  },
+  triggerScroll: function() {
+    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
+    console.log('we triggering?');
   },
   triggerAnimation: function() {
     if ($('html').hasClass('no-js'))
