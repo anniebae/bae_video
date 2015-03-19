@@ -29,6 +29,12 @@
 
   </div>
 
+  <div id="timeline-view">
+    
+    <!-- TIMELINE -->
+
+  </div>
+
   <script type="text/template" id="home-template"> 
     <div id="home">
       <video src="videos/welcome.mp4" autoplay="autoplay" loop="loop" preload="auto" id="home-vid">
@@ -286,25 +292,25 @@
         <div id="timeline">
 
           <ul id="dates">
-
-
+            <% timeline1.each(function(model) { %>
+            <% time = model.get('time'); %>
+            <% image = model.get('image'); %>
+            <% desc = model.get('desc'); %>
             <li><a href="#<%= time %>" class="time-li"><%= time %></a></li>
-
-
+            <% }); %>
           </ul>
-
-
-
-
-           <ul id="issues">
-
+          <ul id="issues">
+            <% timeline1.each(function(model) { %>
+            <% time = model.get('time'); %>
+            <% image = model.get('image'); %>
+            <% desc = model.get('desc'); %>
             <li id="<%= time %>">
               <img src="<%= image %>" width="256" height="256" />
               <h1><%= time %></h1>
               <p><%= desc %></p>
             </li>
-
-             </ul>
+            <% }); %>  
+          </ul>
 
           <div id="grad_left"></div>
           <div id="grad_right"></div>
