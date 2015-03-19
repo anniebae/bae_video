@@ -1,9 +1,6 @@
 var AppView = Backbone.View.extend({
   el: "#menu",
-  homeTemplate: _.template($("#home-template").html()),
-  morningTemplate: _.template($("#morning-template").html()),
-  afternoonTemplate: _.template($("#afternoon-template").html()),
-  eveningTemplate: _.template($("#evening-template").html()),
+
   initialize: function () {
     this.renderHome();
   },
@@ -15,10 +12,7 @@ var AppView = Backbone.View.extend({
     'click .menu-item'      : 'triggerAnimation',
     'click .arrow'          : 'triggerSmoothScroll'
   },
-  renderHome: function() {
-    $('#view').html(this.homeTemplate());
-    return this;
-  },
+
   renderMorning: function() {
     $('#view').html(this.morningTemplate());
     return this;
