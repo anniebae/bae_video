@@ -1,7 +1,5 @@
 new NavView();
 
-
-
 $(function() {
 
   $("video").prop('muted', true);
