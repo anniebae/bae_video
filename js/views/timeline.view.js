@@ -4,14 +4,8 @@ var TimelineView = Backbone.View.extend({
 	initialize: function() {
 		this.render();
 	},
-	morning: function() {
-		this.$el.html(timelineTemplate());
+	render: function() {
+		this.$el.html(this.timelineTemplate());
 		return this;
-	},
-	afternoon: function() {
-
-	},
-	evening: function() {
-
 	},
 });

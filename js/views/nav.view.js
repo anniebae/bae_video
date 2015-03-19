@@ -2,6 +2,9 @@ var NavView = Backbone.View.extend({
   el: "#nav",
   initialize: function () {
     this.init();
+    eveningHours = new Timeline(timeline3);
+    afternoonHours = new Timeline(timeline2);
+    morningHours = new Timeline(timeline1);
   },
   events: {
     'click #home-tab'      : 'renderHome',
@@ -19,12 +22,23 @@ var NavView = Backbone.View.extend({
   },
   renderMorning: function() {
     layoutView.morning();
+    part = "morning";
+    this.renderTimeline(morningHours, part);
   },
   renderAfternoon: function() {
     layoutView.afternoon();
+    part = "afternoon";
+    this.renderTimeline(afternoonHours, part);
   },
   renderEvening: function() {
     layoutView.evening();
+    part = "evening";
+    this.renderTimeline(eveningHours, part);
+  },
+  renderTimeline: function(collection, part) {
+    timelineView = new TimelineView({collection: collection});
+    part = part;
+    return this;
   },
   prep: function() {
     this.mute();
