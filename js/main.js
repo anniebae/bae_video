@@ -3,9 +3,9 @@ $(function() {
   $("video").prop('muted', true);
 
 
-   $('.morning-vid-txt').smoothScroll({
+   // $('.morning-vid-txt').smoothScroll({
     
-   });
+   // });
 
   $('#tooltip').tooltip();
 

@@ -9,22 +9,32 @@
   <link rel="stylesheet" href="css/lib/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<div id="menu-toggle">
-<img src="css/images/menu.png" width=20 height=20 alt=""></img>
-</div>
-
-  <nav id="menu">
-    <a class="menu-item" href="#home-vid-container" id="home-tab">Home</a>
-    <a class="menu-item" href="#morning-vid-container" id="morning-tab">Morning</a>
-    <a class="menu-item" href="#afternoon-vid-container" id="afternoon-tab">Afternoon</a>
-    <a class="menu-item" href="#evening-vid-container" id="evening-tab">Evening</a>
-  </nav>
-
 <body>
 
+  <div id="menu-toggle">
+  <img src="css/images/menu.png" width=20 height=20 alt=""></img>
+  </div>
+    <nav id="menu">
+      <a class="menu-item" href="#home-vid-container" id="home-tab">Home</a>
+      <a class="menu-item" href="#morning-vid-container" id="morning-tab">Morning</a>
+      <a class="menu-item" href="#afternoon-vid-container" id="afternoon-tab">Afternoon</a>
+      <a class="menu-item" href="#evening-vid-container" id="evening-tab">Evening</a>
+    </nav>
+  </div>
 
-<div id="body"></div>
+    <div id="top-view">
+      
+      <!-- VIEW INJECTION -->
+
+    </div>
+
+    <div id="bottom-view">
+
+      <!-- VIEW INJECTION -->
+      
+    </div>
+
+
 
 
 <script type="text/template" id="home-template">
@@ -137,12 +147,11 @@
       </div>
     </div>
   </div>
-// <!-- MORNING TIMELINE DIV -->
+<!-- MORNING TIMELINE DIV -->
 </script>
 
 
 <script type="text/template" id="afternoon-template">
-// <!-- AFTERNOON VID DIV -->
   <div id="afternoon-vid-container">
     <video src="videos/afternoon.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
     </video>
@@ -158,11 +167,9 @@
         <img src="css/images/down-arrow.png" class="arrow">
       </a>
     </div>
-  </div>
-// <!-- AFTERNOON VID DIV -->
+  </div><!-- AFTERNOON VID DIV -->
 
 
-// <!-- AFTERNOON TIMELINE DIV -->
   <div id="afternoon-timeline-container">
     <div class="afternoon-timeline-body">
       <span class="time-of-day">AFTERNOON</span>
@@ -213,12 +220,10 @@
         <a href="#" id="prev" style="display: block;">-</a>      
       </div>
     </div>
-  </div>
-// <!-- AFTERNOON TIMELINE DIV -->
+  </div><!-- AFTERNOON TIMELINE DIV -->
 </script>
 
 <script type="text/template" id="evening-template">
-// <!-- EVENING VID DIV -->
   <div id="evening-vid-container">
     <video src="videos/evening.mp4" autoplay="autoplay" loop="loop" preload="auto" id="afternoon-vid">
     </video>
@@ -234,10 +239,9 @@
         <img src="css/images/down-arrow.png" class="arrow">
       </a>
     </div>
-  </div>
-// <!-- EVENING VID DIV -->
+  </div><!-- EVENING VID DIV -->
 
-// <!-- EVENING TIMELINE DIV -->
+  
   <div id="evening-timeline-container">
     <div class="evening-timeline-body">
       <span class="time-of-day">EVENING</span>
@@ -301,11 +305,11 @@
   <script src="js/lib/appear.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/smoothscroll.js"></script>
-  <script src="js/backbone/views/homeView.js"></script>
-  <script src="js/backbone/views/morningView.js"></script>
-  <script src="js/backbone/views/afternoonView.js"></script>
-  <script src="js/backbone/views/eveningView.js"></script>
-  <script src="js/backbone/views/appView.js"></script>
+  <script src="js/views/homeView.js"></script>
+  <script src="js/views/morningView.js"></script>
+  <script src="js/views/afternoonView.js"></script>
+  <script src="js/views/eveningView.js"></script>
+  <script src="js/views/appView.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
