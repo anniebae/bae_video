@@ -1,11 +1,8 @@
 new AppView();
 $(function() {
+
   $("video").prop('muted', true);
 
-
-   // $('.morning-vid-txt').smoothScroll({
-    
-   // });
 
   $('#tooltip').tooltip();
 

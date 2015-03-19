@@ -11,7 +11,19 @@ var AppView = Backbone.View.extend({
     'click .menu-item'      : 'triggerAnimation'
   },
   init: function() {
-    var layoutView = new LayoutView();
+    layoutView = new LayoutView();
+  },
+  renderHome: function() {
+    layoutView.home();
+  },
+  renderMorning: function() {
+    layoutView.morning();
+  },
+  renderAfternoon: function() {
+    layoutView.afternoon();
+  },
+  renderEvening: function() {
+    layoutView.evening();
   },
   triggerAnimation: function() {
     if ($('html').hasClass('no-js'))
@@ -33,5 +45,7 @@ var AppView = Backbone.View.extend({
           }, { accX: 0, accY: -100 });
         });
       }
+      
+    $("video").prop('muted', true);
   },
 });
