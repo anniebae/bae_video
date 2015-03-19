@@ -279,6 +279,46 @@
   </script>
 
 
+  <script type="text/template" id="timeline-template">
+    <div id="evening-timeline-container">
+      <div class="evening-timeline-body">
+        <span class="time-of-day">EVENING</span>
+        <div id="timeline">
+
+          <ul id="dates">
+
+
+            <li><a href="#<%= time %>" class="time-li"><%= time %></a></li>
+
+
+          </ul>
+
+
+
+
+           <ul id="issues">
+
+            <li id="<%= time %>">
+              <img src="<%= image %>" width="256" height="256" />
+              <h1><%= time %></h1>
+              <p><%= desc %></p>
+            </li>
+
+             </ul>
+
+          <div id="grad_left"></div>
+          <div id="grad_right"></div>
+            <a href="#" id="next" style="display: block;">+</a>
+            <a href="#" id="prev" style="display: block;">-</a>
+        </div>
+      </div>
+    </div><!-- end timeline -->
+  </script>
+
+
+
+
+
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
@@ -287,6 +327,7 @@
   <script src="js/lib/appear.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/smoothscroll.js"></script>
+  <script src="js/models/hour.js"></script>
   <script src="js/views/nav.view.js"></script>
   <script src="js/views/layout.view.js"></script>
   <script src="js/main.js"></script>
