@@ -10,6 +10,7 @@ var NavView = Backbone.View.extend({
     'click #evening-tab'    : 'renderEvening',
     'click .menu-item'      : 'triggerAnimation',
     'click .menu-item'      : 'triggerScroll'
+    // 'click .menu-item'      : 'muteSound'
   },
   init: function() {
     layoutView = new LayoutView();
@@ -26,8 +27,13 @@ var NavView = Backbone.View.extend({
   renderEvening: function() {
     layoutView.evening();
   },
+  // muteSound: function() {
+  //   $("video").prop('muted', true);
+  //   console.log('sound muted');
+  // },
   triggerScroll: function() {
     jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
+    $("video").prop('muted', true);
     console.log('we triggering?');
   },
   triggerAnimation: function() {
