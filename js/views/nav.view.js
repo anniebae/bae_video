@@ -7,20 +7,12 @@ var NavView = Backbone.View.extend({
     morningHours = new Timeline(timeline1);
   },
   events: {
-<<<<<<< HEAD
-    'click #home-tab'       : 'renderHome',
-    'click #morning-tab'    : 'renderMorning',
-    'click #afternoon-tab'  : 'renderAfternoon',
-    'click #evening-tab'    : 'renderEvening',
-    'click .menu-item'      : 'triggerAction'
-=======
     'click #home-tab'      : 'renderHome',
     'click #morning-tab'   : 'renderMorning',
     'click #afternoon-tab' : 'renderAfternoon',
     'click #evening-tab'   : 'renderEvening',
     'click .menu-item'     : 'prep',
     'click #menu-toggle'   : 'toggle'
->>>>>>> c73259f075002fb4e489c40c24069209839d6f00
   },
   init: function() {
     layoutView = new LayoutView();
@@ -43,17 +35,6 @@ var NavView = Backbone.View.extend({
     part = "evening";
     this.renderTimeline(eveningHours, part);
   },
-<<<<<<< HEAD
-  triggerAction: function() {
-    // SMOOTHSCROLL FUNCTION
-    jQuery(function(){ $.localScroll({filter:'.smoothScroll'}); });
-
-    // VIDEO MUTE FUNCTION
-    $("video").prop('muted', true);
-    console.log('we triggering?');
-
-    // ANIMATION FUNCTION
-=======
   renderTimeline: function(collection, part) {
     timelineView = new TimelineView({collection: collection});
     part = part;
@@ -82,7 +63,6 @@ var NavView = Backbone.View.extend({
     $("video").prop('muted', true);
   },
   roll: function() {
->>>>>>> c73259f075002fb4e489c40c24069209839d6f00
     if ($('html').hasClass('no-js'))
       $('html').toggleClass('no-js js');
       if ($(window).width() <= 568) {
