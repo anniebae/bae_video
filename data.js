@@ -63,21 +63,6 @@ timeline2 = [
     time: '6pm',
     desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
     image: 'css/images/6.png'
-  },
-  {
-    time: '7pm',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
-    image: 'css/images/7.png'
-  },
-  {
-    time: '8pm',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
-    image: 'css/images/8.png'
-  },
-  {
-    time: '9pm',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
-    image: 'css/images/9.png'
   }
 ];
 
