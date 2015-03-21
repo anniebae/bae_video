@@ -2,6 +2,7 @@ var NavView = Backbone.View.extend({
   el: "#nav",
   initialize: function () {
     this.init();
+    this.mute();
     eveningHours = new Timeline(timeline3);
     afternoonHours = new Timeline(timeline2);
     morningHours = new Timeline(timeline1);
