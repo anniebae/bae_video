@@ -28,6 +28,9 @@ a:hover, a.selected{
   color: #99FF99;
 }
 
+.timeline-img {
+  height: 55%;
+}
 
 /********************* HOME VID STYLES *********************/
 #home {
