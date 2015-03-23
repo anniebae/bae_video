@@ -71,32 +71,32 @@ timeline3 = [
   {
     time: '7pm',
     desc: 'Fix bug or save for tomorrow.',
-    image: 'css/images/1.png'
+    image: 'css/images/time/7pm.png'
   },
   {
     time: '8pm',
     desc: 'Pass out on bus.',
-    image: 'css/images/5.png'
+    image: 'css/images/time/8pm.png'
   },
   {
     time: '9pm',
     desc: 'Shove my face in car.',
-    image: 'css/images/6.png'
+    image: 'css/images/time/9pm.png'
   },
   {
     time: '10pm',
     desc: 'Sneak in a snack if ambitious. ',
-    image: 'css/images/7.png'
+    image: 'css/images/time/10pm.png'
   },
   {
     time: '11pm',
     desc: "Wash up, read Tiny Fey's Bossypants",
-    image: 'css/images/8.png'
+    image: 'css/images/time/11pm.png'
   },
   {
-    time: '12pm',
+    time: '12am',
     desc: 'Go to bed, try not to drool on pillow.',
-    image: 'css/images/9.png'
+    image: 'css/images/time/12am.png'
   }
 ];
 
