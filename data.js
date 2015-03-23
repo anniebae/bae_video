@@ -37,32 +37,32 @@ timeline2 = [
   {
     time: '1pm',
     desc: 'Contemplate on getting lunch.',
-    image: 'css/images/1.png'
+    image: 'css/images/time/1pm.png'
   },
   {
     time: '2pm',
     desc: 'Give in and stuff my face.',
-    image: 'css/images/2.png'
+    image: 'css/images/time/2pm.png'
   },
   {
     time: '3pm',
     desc: 'Go for a walk.',
-    image: 'css/images/3.png'
+    image: 'css/images/time/3pm.png'
   },
   {
     time: '4pm',
     desc: 'Check on more emails, drink more coffee.',
-    image: 'css/images/4.png'
+    image: 'css/images/time/4pm.png'
   },
   {
     time: '5pm',
     desc: 'Wrap up on current project.',
-    image: 'css/images/5.png'
+    image: 'css/images/time/5pm.png'
   },
   {
     time: '6pm',
     desc: 'Find a bug in project, get stuck in dilemma.',
-    image: 'css/images/6.png'
+    image: 'css/images/time/6pm.png'
   }
 ];
 
