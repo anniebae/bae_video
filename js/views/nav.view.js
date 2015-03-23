@@ -85,9 +85,6 @@ var NavView = Backbone.View.extend({
   },
   timeline: function() {
     $("#timeline").timelinr({
-      // autoPlay: 'true',
-      // autoPlayDirection: 'forward',
-      // startAt: 1,
       orientation: 'horizontal',
       // value: horizontal | vertical, default to horizontal
       containerDiv: '#timeline',

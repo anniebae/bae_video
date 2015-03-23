@@ -3,32 +3,32 @@ timeline1 = [
   {
     time: '7am',
     desc: 'Press snooze..',
-    image: 'css/images/1.png'
+    image: 'css/images/time/7am.png'
   },
   {
     time: '8am',
     desc: 'Feed the cat, wash up, make face look human, get dressed.',
-    image: 'css/images/5.png'
+    image: 'css/images/time/8am.png'
   },
   {
     time: '9am',
     desc: 'Run after the bus.',
-    image: 'css/images/6.png'
+    image: 'css/images/time/9am.png'
   },
   {
     time: '10am',
     desc: 'Drown in coffee, check emails, code for hours.',
-    image: 'css/images/7.png'
+    image: 'css/images/time/10am.png'
   },
   {
     time: '11am',
     desc: 'Continue coding...',
-    image: 'css/images/8.png'
+    image: 'css/images/time/11am.png'
   },
   {
     time: '12pm',
     desc: 'Get hungry.',
-    image: 'css/images/9.png'
+    image: 'css/images/time/12pm.png'
   }
 ];
 
