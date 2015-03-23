@@ -85,9 +85,9 @@ var NavView = Backbone.View.extend({
   },
   timeline: function() {
     $("#timeline").timelinr({
-      autoPlay: 'true',
-      autoPlayDirection: 'forward',
-      startAt: 4,
+      // autoPlay: 'true',
+      // autoPlayDirection: 'forward',
+      // startAt: 1,
       orientation: 'horizontal',
       // value: horizontal | vertical, default to horizontal
       containerDiv: '#timeline',
@@ -114,7 +114,7 @@ var NavView = Backbone.View.extend({
       // value: any HTML tag or #id, default to #next
       arrowKeys: 'false',
       // value: true/false, default to false
-      startAt: 4,
+      startAt: 1,
       // value: integer, default to 1 (first)
       autoPlay: 'true',
       // value: true | false, default to false
