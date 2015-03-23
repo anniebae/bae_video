@@ -2,32 +2,32 @@ timeline1 = [
   {day: "morning"},
   {
     time: '7am',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Press snooze..',
     image: 'css/images/1.png'
   },
   {
     time: '8am',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Feed the cat, wash up, make face look human, get dressed.',
     image: 'css/images/5.png'
   },
   {
     time: '9am',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Run after the bus.',
     image: 'css/images/6.png'
   },
   {
     time: '10am',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Drown in coffee and code for hours.',
     image: 'css/images/7.png'
   },
   {
     time: '11am',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Continue coding...',
     image: 'css/images/8.png'
   },
   {
     time: '12pm',
-    desc: 'Lorem ipsum dolor sit amet, eros elit pretium at, id similique pede maecenas, lectus imperdiet, sed vestibulum netus augue vitae quam mollis, eget tortor euismod ultrices hendrerit. Id mauris libero natoque nibh vestibulum vel. Quis aliquam quis, proin et nascetur eget vestibulum.',
+    desc: 'Get hungry.',
     image: 'css/images/9.png'
   }
 ];
