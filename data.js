@@ -1,5 +1,4 @@
 timeline1 = [
-  {day: "morning"},
   {
     time: '7am',
     desc: 'Press snooze..',
@@ -33,7 +32,6 @@ timeline1 = [
 ];
 
 timeline2 = [
-  {day: "afternoon"},
   {
     time: '1pm',
     desc: 'Contemplate on getting lunch.',
@@ -67,7 +65,6 @@ timeline2 = [
 ];
 
 timeline3 = [
-  {day: "evening"},
   {
     time: '7pm',
     desc: 'Fix bug or save for tomorrow.',
