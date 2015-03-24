@@ -30,14 +30,23 @@ a:hover, a.selected{
 
 #timeline {
   width: 60%;
+  margin: 100px auto;
 }
 
-#dates {
-  width: 60%;
+#timeline-body {
+  padding-top: 200px;
 }
 
 .timeline-img {
   height: 55%;
+}
+
+.issues-li {
+  text-align: center;
+}
+
+.issues-img {
+  height: 50%;
 }
 
 

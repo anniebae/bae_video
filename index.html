@@ -126,7 +126,7 @@
 
   <script type="text/template" id="timeline-template">
     <div id="<%= part %>-timeline-container">
-      <div class="<%= part %>-timeline-body">
+      <div class="<%= part %>-timeline-body" id="timeline-body">
         <span class="time-of-day"><%= part %></span>
         <div id="timeline">
           <ul id="dates">
@@ -142,15 +142,17 @@
             <% time = model.get('time'); %>
             <% image = model.get('image'); %>
             <% desc = model.get('desc'); %>
-            <li id="<%= time %>">
-              <img src="<%= image %>" width="256" height="256" />
+            <li id="<%= time %>" class="issues-li">
+              <img src="<%= image %>" class="issues-img"/>
               <h1><%= time %></h1>
               <p><%= desc %></p>
             </li>
             <% }); %>  
           </ul>
-          <div id="grad_left"></div>
-          <div id="grad_right"></div>
+          <div id="grads">
+            <div id="grad_left"></div>
+            <div id="grad_right"></div>
+          </div>
             <a href="#" id="next" style="display: block;">+</a>
             <a href="#" id="prev" style="display: block;">-</a>
         </div>

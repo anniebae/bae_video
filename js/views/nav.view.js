@@ -103,9 +103,9 @@ var NavView = Backbone.View.extend({
       // value: any class, default to selected
       issuesSpeed: 'normal',
       // value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to fast
-      issuesTransparency: 0.2,
+      // issuesTransparency: 0.2,
       // value: integer between 0 and 1 (recommended), default to 0.2
-      issuesTransparencySpeed: 500,
+      // issuesTransparencySpeed: 500,
       // value: integer between 100 and 1000 (recommended), default to 500 (normal)
       prevButton: '#prev',
       // value: any HTML tag or #id, default to #prev
@@ -115,11 +115,11 @@ var NavView = Backbone.View.extend({
       // value: true/false, default to false
       startAt: 1,
       // value: integer, default to 1 (first)
-      autoPlay: 'true',
+      // autoPlay: 'true',
       // value: true | false, default to false
-      autoPlayDirection: 'forward',
+      // autoPlayDirection: 'forward',
       // value: forward | backward, default to forward
-      autoPlayPause: 4500
+      // autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
   });
   },
