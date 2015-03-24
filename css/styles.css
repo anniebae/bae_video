@@ -29,7 +29,11 @@ a:hover, a.selected{
 }
 
 #timeline {
-  width: 75%;
+  width: 60%;
+}
+
+#dates {
+  width: 60%;
 }
 
 .timeline-img {
