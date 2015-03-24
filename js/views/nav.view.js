@@ -6,6 +6,7 @@ var NavView = Backbone.View.extend({
     eveningHours = new Timeline(timeline3);
     afternoonHours = new Timeline(timeline2);
     morningHours = new Timeline(timeline1);
+    // morningHours (instantiated collection) = new Timeline(collection)(timeline(data- array of objects with new models))
   },
   events: {
     'click #home-tab'      : 'renderHome',
@@ -20,6 +21,7 @@ var NavView = Backbone.View.extend({
   },
   renderHome: function() {
     layoutView.home();
+    $('#timeline-view').empty();
   },
   renderMorning: function() {
     layoutView.morning();
