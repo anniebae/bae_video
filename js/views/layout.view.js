@@ -4,6 +4,7 @@ var LayoutView = Backbone.View.extend({
   morningTemplate: _.template($("#morning-template").html()),
   afternoonTemplate: _.template($("#afternoon-template").html()),
   eveningTemplate: _.template($("#evening-template").html()),
+  contactsTemplate: _.template($("#contacts-template").html()),
   initialize: function() {
   	this.home();
   },
@@ -24,4 +25,8 @@ var LayoutView = Backbone.View.extend({
   	this.$el.html(this.eveningTemplate());
   	return this;
   },
+  contacts: function() {
+    this.$el.html(this.contactsTemplate());
+    return this;
+  }
 });

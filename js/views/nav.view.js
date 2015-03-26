@@ -13,6 +13,7 @@ var NavView = Backbone.View.extend({
     'click #morning-tab'   : 'renderMorning',
     'click #afternoon-tab' : 'renderAfternoon',
     'click #evening-tab'   : 'renderEvening',
+    'click #contacts-tab'  : 'renderContacts',
     'click .menu-item'     : 'prep',
     'click #menu-toggle'   : 'toggle'
   },
@@ -122,5 +123,8 @@ var NavView = Backbone.View.extend({
       autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
   });
+  },
+  renderContacts: function() {
+    layoutView.contacts();
   },
 });
