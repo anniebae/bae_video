@@ -285,7 +285,7 @@ a:hover, a.selected{
   padding-top: 10%;
 }
 
-.social {
+.social-icon {
   border-radius: 100%;
   border: 5px solid white;
 }
@@ -299,9 +299,11 @@ a:hover, a.selected{
   padding: 0 100px 0 100px;
 }
 
-#gmail-caption {
+.contacts-name {
   display: none;
 }
+
+
 
 /********************* CONTACTS STYLES *********************/
 

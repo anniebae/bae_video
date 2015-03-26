@@ -13,9 +13,10 @@ var NavView = Backbone.View.extend({
     'click #morning-tab'   : 'renderMorning',
     'click #afternoon-tab' : 'renderAfternoon',
     'click #evening-tab'   : 'renderEvening',
-    'click #contacts-tab'  : 'renderContacts',
     'click .menu-item'     : 'prep',
-    'click #menu-toggle'   : 'toggle'
+    'click #menu-toggle'   : 'toggle',
+    'click #contacts-tab'  : 'renderContacts',
+    'mouseenter .social-icon'    : 'showContacts'
   },
   init: function() {
     layoutView = new LayoutView();
@@ -126,5 +127,14 @@ var NavView = Backbone.View.extend({
   },
   renderContacts: function() {
     layoutView.contacts();
+  },
+  showContacts: function(e) {
+    console.log('show media name');
+    e.preventDefault();
+    $contactsDiv = $(e.currentTarget);
+    $contactsDiv.find('.contacts-name').show().mouseleave(
+      function() {
+        $('.contacts-name').hide();
+      });
   },
 });
