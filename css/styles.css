@@ -267,7 +267,13 @@ a:hover, a.selected{
 
 /********************* EVENING TIMELINE STYLES *********************/
 
-
+/********************* CONTACTS STYLES *********************/
+#contacts {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+/********************* CONTACTS STYLES *********************/
 
 
 #menu {
