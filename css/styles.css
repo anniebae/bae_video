@@ -2,7 +2,7 @@ body {
   font-family: futura;
   font-weight: 100;
   color: white;
-  line-height: 0;
+/*  line-height: 0;*/
   overflow-x: hidden;
 }
 
@@ -273,6 +273,23 @@ a:hover, a.selected{
   width: 100vw;
   background-color: pink;
 }
+
+.contacts-txt {
+  font-size: 600%;
+}
+
+.contacts-body {
+  text-align: center;
+}
+
+#social_media {
+  list-style-type: none;
+}
+
+#social_media li {
+  display: inline-block;
+}
+
 /********************* CONTACTS STYLES *********************/
 
 
