@@ -282,12 +282,18 @@ a:hover, a.selected{
   text-align: center;
 }
 
+.social {
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
 #social_media {
   list-style-type: none;
 }
 
 #social_media li {
   display: inline-block;
+  padding: 0 10px 0 20px;
 }
 
 /********************* CONTACTS STYLES *********************/
