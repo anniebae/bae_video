@@ -127,6 +127,7 @@ var NavView = Backbone.View.extend({
   },
   renderContacts: function() {
     layoutView.contacts();
+    $('#timeline-view').empty();
   },
   showContacts: function(e) {
     console.log('show media name');
