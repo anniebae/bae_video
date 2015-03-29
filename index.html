@@ -145,7 +145,7 @@
             <% desc = model.get('desc'); %>
             <li id="<%= time %>" class="issues-li">
               <img src="<%= image %>" class="issues-img"/>
-              <h1><%= time %></h1>
+              <h1 class="time"><%= time %></h1>
               <p><%= desc %></p>
             </li>
             <% }); %>  
@@ -163,11 +163,9 @@
   <script type="text/template" id="contacts-template">
     <div id="contacts">
       <div class="contacts-body">
-
         <div class="animate-in" data-anim-type="fade-in-up-large" data-anim-delay="200">
           <h1 class="contacts-txt">contacts</h1>
         </div>
-
         <div class="col-xs-6 col-md-4">
           <img src="css/images/social/gmail.png" class="social-icon">
           <div class="contacts-name">
@@ -193,6 +191,7 @@
           </div>
         </div>
       </div>
+      <span class="copyright">&copy; 2015 <a href="anniebae.com" target="_blank">anniebae</a>. All Rights Reserved.</span>
     </div>
   </script>
 

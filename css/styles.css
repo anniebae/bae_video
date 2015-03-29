@@ -21,11 +21,11 @@ a {
 }
 
 a:hover, a.selected{
-  color: #99FF99;
+  color: #B6C6E6;
 }
 
 #issues li h1 {
-  color: #99FF99;
+  color: #B6C6E6;
 }
 
 #timeline {
@@ -46,7 +46,7 @@ a:hover, a.selected{
 }
 
 .issues-img {
-  height: 50%;
+  height: 40%;
 }
 
 
@@ -110,7 +110,7 @@ a:hover, a.selected{
 #morning {
   height: 100vh;
   width: 100vw;
-  background-color: #99FF99;
+  background-color: #B6C6E6;
   position: relative;
 }
 
@@ -122,7 +122,7 @@ a:hover, a.selected{
 
 .morning-vid-cover {
   position: absolute;
-  background-color: #99FF99;
+  background-color: #B6C6E6;
   opacity: 0.5;
   z-index: 2;
   width: 100%;
@@ -228,13 +228,13 @@ a:hover, a.selected{
 #evening {
   height: 100vh;
   width: 100vw;
-  background-color: #C199C1;
+  background-color: #B2CB7E;
   position: relative;
 }
 
 .evening-vid-cover {
   position: absolute;
-  background-color: #C199C1;
+  background-color: #B2CB7E;
   opacity: 0.5;
   z-index: 2;
   width: 100%;
@@ -272,7 +272,8 @@ a:hover, a.selected{
 #contacts {
   height: 100vh;
   width: 100vw;
-  background-color: pink;
+  background-color: #77626D;
+  position: relative;
 }
 
 .contacts-txt {
@@ -303,6 +304,12 @@ a:hover, a.selected{
 /*  display: none;*/
 }
 
+.copyright {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  right: 0;
+}
 
 
 /********************* CONTACTS STYLES *********************/
@@ -356,4 +363,20 @@ display: block;
 }
 #menu-toggle.open {
 left: 200px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .issues-img {
+    height: 30%;
+  }
+  .time {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .issues-img {
+    height: 18%;
+  }
 }
