@@ -13,9 +13,9 @@ var NavView = Backbone.View.extend({
     'click #morning-tab'   : 'renderMorning',
     'click #afternoon-tab' : 'renderAfternoon',
     'click #evening-tab'   : 'renderEvening',
+    'click #contacts-tab'  : 'renderContacts',
     'click .menu-item'     : 'prep',
     'click #menu-toggle'   : 'toggle',
-    'click #contacts-tab'  : 'renderContacts',
     'mouseenter .social-icon'    : 'showContacts'
   },
   init: function() {
@@ -39,6 +39,10 @@ var NavView = Backbone.View.extend({
     layoutView.evening();
     part = "evening";
     this.renderTimeline(eveningHours, part);
+  },
+  renderContacts: function() {
+    layoutView.contacts();
+    $('#timeline-view').empty();
   },
   renderTimeline: function(collection, part) {
     timelineView = new TimelineView({collection: collection});
@@ -124,18 +128,5 @@ var NavView = Backbone.View.extend({
       autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
   });
-  },
-  renderContacts: function() {
-    layoutView.contacts();
-    $('#timeline-view').empty();
-  },
-  showContacts: function(e) {
-    console.log('show media name');
-    e.preventDefault();
-    $contactsDiv = $(e.currentTarget);
-    $contactsDiv.find('.contacts-name').show().mouseleave(
-      function() {
-        $('.contacts-name').hide();
-      });
   },
 });
