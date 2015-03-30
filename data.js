@@ -11,7 +11,7 @@ timeline1 = [
   },
   {
     time: '9am',
-    desc: 'Run after the bus.',
+    desc: 'Leave the suburbs and run after the bus.',
     image: 'css/images/time/9am.png'
   },
   {
@@ -72,12 +72,12 @@ timeline3 = [
   },
   {
     time: '8pm',
-    desc: 'Pass out on bus.',
+    desc: 'Leave urban city and pass out on bus.',
     image: 'css/images/time/8pm.png'
   },
   {
     time: '9pm',
-    desc: 'Shove my face in car.',
+    desc: 'Stuff my face in car.',
     image: 'css/images/time/9pm.png'
   },
   {
@@ -87,7 +87,7 @@ timeline3 = [
   },
   {
     time: '11pm',
-    desc: "Wash up, read Tiny Fey's Bossypants",
+    desc: "Wash up, read Tiny Fey's Bossypants.",
     image: 'css/images/time/11pm.png'
   },
   {
