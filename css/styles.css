@@ -291,6 +291,10 @@ a:hover, a.selected{
   border: 5px solid white;
 }
 
+.social-icon:hover {
+  background-color: #E0CCE0;
+}
+
 #social_media {
   list-style-type: none;
 }
