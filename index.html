@@ -142,9 +142,17 @@
             <% image = model.get('image'); %>
             <% desc = model.get('desc'); %>
             <li id="<%= time %>" class="issues-li">
-              <img src="<%= image %>" class="issues-img"/>
-              <h1 class="time"><%= time %></h1>
-              <p><%= desc %></p>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-5 col-lg-6">
+                  <img src="<%= image %>" class="issues-img"/>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-lg-offset-0">
+                  <h1 class="time"><%= time %></h1>
+                  <p><%= desc %></p>
+                </div>
+              </div>
+
             </li>
             <% }); %>  
           </ul>
