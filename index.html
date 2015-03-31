@@ -132,8 +132,6 @@
         <div id="timeline">
           <ul id="dates">
             <% this.collection.each(function(model) { %>
-            <% image = model.get('image'); %>
-            <% desc = model.get('desc'); %>
             <% time = model.get('time'); %>
             <li><a href="#<%= time %>" class="time-li"><%= time %></a></li>
             <% }); %>
