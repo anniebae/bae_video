@@ -121,9 +121,9 @@ var NavView = Backbone.View.extend({
       // value: true/false, default to false
       startAt: 1,
       // value: integer, default to 1 (first)
-      // autoPlay: 'true',
+      autoPlay: 'true',
       // value: true | false, default to false
-      // autoPlayDirection: 'forward',
+      autoPlayDirection: 'forward',
       // value: forward | backward, default to forward
       autoPlayPause: 4500
       // value: integer (1000 = 1 seg), default to 2000 (2segs)< });
