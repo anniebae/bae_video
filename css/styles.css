@@ -386,19 +386,80 @@ left: 200px;
   #issues li h1 {
     font-size: 40px;
   }
+  .row {
+    margin-left: 15%;
+    width: 70%;
+  }
+  .issues-img {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    width: 70%;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .issues-img {
-    height: 120px;
+    height: 100px;
   }
   .time {
     font-size: 14px;
   }
+  .row {
+    width: 60%;
+  }
+  #issues li h1 {
+    font-size: 35px;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 670px) {
+  .row {
+    width: 50%;
+    margin-left: 8%;
+  }
+  #dates .selected {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    margin-left: 5%;
+  }
   .issues-img {
-    height: 90px;
+    height: 80px;
+  }
+  #issues li h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .row {
+    margin-left: 0;
+  }
+  #issues li p {
+    font-size: 12px;
+  }
+  #issues li h1 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .row {
+    width: 45%;
+    margin-left: 5px;
+  }
+  #issues li p {
+    margin-left: 30px;
+  }
+  #issues li h1 {
+    font-size: 25px;
   }
 }
