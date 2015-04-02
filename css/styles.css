@@ -461,5 +461,28 @@ left: 200px;
   }
   #issues li h1 {
     font-size: 25px;
+    margin-right: 22px;
+  }
+  .issues-img {
+    height: 70px;
+  }
+    #dates .selected {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .row {
+    width: 30%;
+    margin-left: 5%;
+  }
+  #issues li h1 {
+    margin-right: -7%;
+  }
+  #issues li p {
+    margin-left: 7%;
+  }
+  #dates .selected {
+    font-size: 25px;
   }
 }
