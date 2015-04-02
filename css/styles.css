@@ -2,6 +2,7 @@ body {
   font-family: futura;
   font-weight: 100;
   color: white;
+  background-color: #222;
 /*  line-height: 0;*/
   overflow-x: hidden;
 }
@@ -45,10 +46,22 @@ a:hover, a.selected{
   text-align: center;
 }
 
+#issues li {
+  width: 600px;
+}
+
+#issues li p {
+  margin-right: 0;
+}
+
 .issues-img {
   height: 150px;
 }
 
+.row {
+  margin-left: 30%;
+  margin-right: 0;
+}
 
 /********************* HOME VID STYLES *********************/
 #home {
@@ -369,6 +382,11 @@ display: block;
 left: 200px;
 }
 
+@media screen and (max-width: 1150px) {
+  #issues li h1 {
+    font-size: 40px;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .issues-img {
