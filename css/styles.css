@@ -3,12 +3,10 @@ body {
   font-weight: 100;
   color: white;
   background-color: #222;
-/*  line-height: 0;*/
   overflow-x: hidden;
 }
 
 .time-of-day {
-  /*font-family: 'Quicksand';*/
   font-size: 3em;
   font-weight: 100;
 }
@@ -96,8 +94,6 @@ a:hover, a.selected{
   z-index: 3;
 }
 /********************* HOME VID STYLES *********************/
-
-
 
 /********************* HOME SCRIPT STYLES *********************/
 #home-script-container {
@@ -218,9 +214,6 @@ a:hover, a.selected{
 }
 /********************* AFTERNOON VID STYLES *********************/
 
-
-
-
 /********************* AFTERNOON TIMELINE STYLES *********************/
 #afternoon-timeline-container {
   height: 100vh;
@@ -234,8 +227,6 @@ a:hover, a.selected{
 }
 
 /********************* AFTERNOON TIMELINE STYLES *********************/
-
-
 
 /********************* EVENING VID STYLES *********************/
 #evening {
@@ -281,7 +272,6 @@ a:hover, a.selected{
 /********************* EVENING TIMELINE STYLES *********************/
 
 /********************* CONTACTS STYLES *********************/
-
 #contacts {
   height: 100vh;
   width: 100vw;
@@ -327,10 +317,7 @@ a:hover, a.selected{
   bottom: 0;
   right: 0;
 }
-
-
 /********************* CONTACTS STYLES *********************/
-
 
 #menu {
 transition: all 0.3s ease;
@@ -382,6 +369,7 @@ display: block;
 left: 200px;
 }
 
+/********************* RWD MEDIA QUERIES *********************/
 @media screen and (max-width: 1150px) {
   #issues li h1 {
     font-size: 40px;
@@ -483,3 +471,4 @@ left: 200px;
     margin-left: 7%;
   }
 }
+/********************* RWD MEDIA QUERIES *********************/
